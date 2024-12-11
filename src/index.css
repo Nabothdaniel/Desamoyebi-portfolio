@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-primary font-poppins text-[16px] tracking-[-0.03em] text-white
+}
+
+.h1 {
+  @apply text-4xl md:text-6xl font-poppins font-bold text-white mb-5 xs:leading-[76.8px] leading-[66.8px] w-full
+}
+
+.paragraph {
+  @apply text-lg md:text-xl text-white mb-12 font-poppins font-normal leading-[30.8px]
+}
+@layer utility {
+  
+
+
+  .px {
+    @apply sm:px-16 px-6
+  }
+
+  .py {
+    @apply sm:py-16 py-6
+  }
+
+  .my {
+    @apply sm:mx-16 mx-6
+  }
+
+  .mx {
+    @apply sm:my-16 my-6
+  }
+}
+
+.container {
+  @apply mx-auto max-w-[1240px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4;
+}
+
+.home {
+  background: url('/public/img/hero.png');
+
+}
+
+.btn:hover {
+  background-color: #000000;
+  border: 2px solid #FF7C00;
+  transition: all .5s ease-in-out;
+  transform: translateY(-10px);
+}
+
+.service_item:hover {
+  transition: all .5s ease-in-out;
+  transform: translateY(-10px);
+}
+
+.connect {
+  background: url('/public/img/connect.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
+  background-size: cover;
+}
+
+.icon:hover {
+  background-color: #FF7C00;
+  transition: all .5s ease-in-out;
+  transform: translateY(-10px);
+}
+
+.overlay_circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.form_section {
+  background: url('/img/space.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.service_section {
+  background: url('/img/service.jpg');
+  height: 100vh;
+}
+
+.message {
+  box-shadow: 0 4px 8px rgba(0.2, 0, 0, 0.4);
+}
+
+@media (max-width: 780px) {
+  .home {
+    background: url('/public/img/hero.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+  }
+
+  .service_section {
+    background: url('/img/service.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+  }
+  
+}
